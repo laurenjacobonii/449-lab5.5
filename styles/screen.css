@@ -1,50 +1,141 @@
-body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+:root{
+    --main-bg-color: #e9e9e9;
+    --text-color: #424242;
+    --accent-color: #FF3F3C;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background: var(--main-bg-color);
+    color: var(--text-color);
+    padding: 0;
+    margin: auto;
+}
+
+main{
+    background: url('../images/polaroid.png') no-repeat center 100px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+header{
+    padding: 35px;
+    margin-bottom: 20px;
+}
+
+header h1{
+    margin: 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+
+
+.title{
+    text-align: center;
+    min-height: 800px;
+}
+
+.title h2{
+    font-size: 8.1em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.information{
+    width: 700px;
+    margin: 80px auto auto auto;
+
+}
+
+.information p{
+    word-spacing: 1.2px;
+    letter-spacing: .5px;
+    margin-left: 15px;
+}
+
+
+.information h3{
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.information ul{
+    margin-left: -15px;
+}
+.information ul li{
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 70px;
+    height: 46px;
+    line-height: 50px;
+    
+
+}
+
+.information ul li.wifi{
+    background: url('../images/wifi.svg') no-repeat center left;
+
+}
+
+.information ul li.cloud{
+    background: url('../images/cloud-arrow-up-solid\ 1.svg')no-repeat center left;
+
+}
+
+.information ul li.qr{
+    background: url('../images/qrcode-solid\ 1.svg')no-repeat center left;
+    
+}
+
+.information ul li.photofilm{
+    background: url('../images/photo-film-solid\ 1.svg')no-repeat center left;
+    
+}
+
+.formsection{
+    margin: 40px auto 80px auto;
     text-align: center;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
+.formsection h3{
+    font-size: 38px;
+
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+form{
+    background-color: rgb(215, 215, 215);
+    margin: auto;
+    width: 550px;
+    height: 120px;
+    border-radius: 15px;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+form input.input1{
+    margin: 30px auto auto auto;
+    height: 50px;
+    width: 330px;
+    background-color: var(--main-bg-color);
+    text-align: left;
+    word-spacing: 1.2px;
+    letter-spacing: .5px;
+    border: none;
+    text-indent: 17px;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
-}
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
-}
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-img.about {
-    opacity: 0.5;
+form input.input2{
+    margin: 10px auto auto auto;
+    height: 55px;
+    width: 165px;
+    color: white;
+    background-color: var(--accent-color);
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
 }
